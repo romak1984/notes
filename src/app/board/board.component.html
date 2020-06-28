@@ -1,0 +1,3 @@
+<button (click)="clearAll()">Clear all</button>
+<button (click)="addNote()">Add note</button>
+<app-note *ngFor="let note of notes$ | async" [note]="note" (delete)="deleteNote($event)" (edit)="editNote($event)"></app-note>

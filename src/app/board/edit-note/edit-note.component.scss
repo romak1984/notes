@@ -1,0 +1,41 @@
+.edit-note-form {
+
+  .button-container {
+    button {
+      margin: 3px;
+    }
+    text-align: center;
+  }
+
+  .form-group {
+
+    box-sizing: border-box;
+
+    &:not(:last-of-type) {
+      margin-bottom: 20px;
+    }
+
+    label {
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    textarea {
+      outline: none !important;
+      width: 100%;
+
+      &:focus {
+        border: 1px solid blue;
+      }
+
+      &.ng-invalid {
+        border: 1px solid red;
+      }
+    }
+
+    textarea {
+      height: 200px;
+    }
+  }
+
+}

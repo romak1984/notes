@@ -1,0 +1,7 @@
+<div (click)="onEdit()"
+      class="note">
+      <span class="del-note" (click)="onDelete($event)">&#x2612;</span>
+      <span class="note-author">{{note.name}}</span>
+      <span class="note-date">{{note.date | date}}</span>
+      <div class="note-content" ellipsis [ellipsis-content]="note.content"></div>
+</div>
